@@ -13,8 +13,6 @@ import javafx.scene.layout.FlowPane;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
-import ksxsdk. *;
-
 public class App extends Application {
 
     public ComboBox cbportList;
@@ -50,7 +48,7 @@ public class App extends Application {
 
     private ReadSensorThread readThread;
     private ActuatorNode mActuatorNode;
-    STDModbusRTUMaster mMaster = new STDModbusRTUMaster();
+    STDModbusMaster mMaster = new STDModbusMaster();
 
     private List<PaneSensor> mPanesensorlist = new ArrayList<>();
 
@@ -223,8 +221,8 @@ public class App extends Application {
 
     public void DeviceScan() {
         try {
-            if (mActuatorNode.ReadDeviceList() == true) {
-                if (mActuatorNode.createDevice() == true) {
+            if (mActuatorNode.ReadDeviceCodeList() == true) {
+                if (mActuatorNode.CreateDevices() == true) {
                     System
                         .out
                         .println(" 디바이스갯수 = " + mActuatorNode.mDevices.size());
