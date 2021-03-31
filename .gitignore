@@ -1,0 +1,11 @@
+
+Java/Applications/actuatormonitor/.vscode/extensions.json
+Java/Applications/actuatormonitor/.vscode/launch.json
+Java/Applications/actuatormonitor/.vscode/settings.json
+Java/Applications/netrientmonitor/.vscode/extensions.json
+Java/Applications/netrientmonitor/.vscode/launch.json
+Java/Applications/netrientmonitor/.vscode/settings.json
+Java/SDKforKSX3267/lib/jackson-annotations-2.6.0.jar
+Java/SDKforKSX3267/lib/jackson-core-2.6.3.jar
+Java/SDKforKSX3267/lib/jackson-databind-2.6.3.jar
+Java/SDKforKSX3267/lib/jSerialComm-2.6.2.jar
