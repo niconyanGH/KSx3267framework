@@ -88,16 +88,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\RS485ModbusLibary\RS485ModbusLibary.csproj">
-      <Project>{55c9a88f-ae22-4899-acf0-38f06b39033f}</Project>
-      <Name>RS485ModbusLibary</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\SDKforKSX3267\SDKforKSX3267.csproj">
-      <Project>{27d008ea-6b90-41c6-8437-f836c55b597e}</Project>
-      <Name>SDKforKSX3267</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="image\baseline_playlist_play_black_18dp.png" />
   </ItemGroup>
   <ItemGroup>
@@ -117,6 +107,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="image\baseline_open_in_browser_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\RS485ModbusLibary\RS485ModbusLibary.csproj">
+      <Project>{55c9a88f-ae22-4899-acf0-38f06b39033f}</Project>
+      <Name>RS485ModbusLibary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SDKforKSX3267\SDKforKSX3267.csproj">
+      <Project>{27d008ea-6b90-41c6-8437-f836c55b597e}</Project>
+      <Name>SDKforKSX3267</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
