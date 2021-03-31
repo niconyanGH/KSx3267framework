@@ -1,0 +1,596 @@
+{
+  "Class": "node",
+  "Type": "sensor-node",
+  "Model": "DEF-SENSORNODE-001",
+  "Name": "디폴트센서노드",
+  "CommSpec": {
+    "KS-X-3267:2018": {
+      "read": {
+        "starting-register": 201,
+        "items": [
+          "opid",
+          "status"
+        ]
+      },
+      "write": {
+        "starting-register": 401,
+        "items": [
+          "operation",
+          "opid"
+        ]
+      }
+    }
+  },
+  "Devices": [
+    {
+      "Class": "sensor",
+      "Type": "temperature-sensor",
+      "Model": "SEN-TEMP",
+      "Name": "온도센서",
+      "ValueUnit": "℃",
+      "ValueType": "float",
+      "CommSpec": {
+        "KS-X-3267:2018": {
+          "read": {
+            "starting-register": 203,
+            "items": [
+              "value",
+              "status"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "Class": "sensor",
+      "Type": "temperature-sensor",
+      "Model": "SEN-TEMP",
+      "Name": "온도센서",
+      "ValueUnit": "℃",
+      "ValueType": "float",
+      "CommSpec": {
+        "KS-X-3267:2018": {
+          "read": {
+            "starting-register": 206,
+            "items": [
+              "value",
+              "status"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "Class": "sensor",
+      "Type": "temperature-sensor",
+      "Model": "SEN-TEMP",
+      "Name": "온도센서",
+      "ValueUnit": "℃",
+      "ValueType": "float",
+      "CommSpec": {
+        "KS-X-3267:2018": {
+          "read": {
+            "starting-register": 209,
+            "items": [
+              "value",
+              "status"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "Class": "sensor",
+      "Type": "humidity-sensor",
+      "Model": "SEN-HUM",
+      "Name": "습도센서",
+      "ValueUnit": "%",
+      "ValueType": "float",
+      "CommSpec": {
+        "KS-X-3267:2018": {
+          "read": {
+            "starting-register": 212,
+            "items": [
+              "value",
+              "status"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "Class": "sensor",
+      "Type": "dewpoint-sensor",
+      "Model": "SEN-DEW",
+      "Name": "이슬점센서",
+      "ValueUnit": "℃",
+      "ValueType": "float",
+      "CommSpec": {
+        "KS-X-3267:2018": {
+          "read": {
+            "starting-register": 215,
+            "items": [
+              "value",
+              "status"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "Class": "sensor",
+      "Type": "rain-detector-sensor",
+      "Model": "SEN-RAIN-D",
+      "Name": "감우센서",
+      "ValueUnit": "",
+      "ValueType": "float",
+      "CommSpec": {
+        "KS-X-3267:2018": {
+          "read": {
+            "starting-register": 218,
+            "items": [
+              "value",
+              "status"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "Class": "sensor",
+      "Type": "flow-sensor",
+      "Model": "SEN-FLOW",
+      "Name": "유량센서",
+      "ValueUnit": "L",
+      "ValueType": "float",
+      "CommSpec": {
+        "KS-X-3267:2018": {
+          "read": {
+            "starting-register": 221,
+            "items": [
+              "value",
+              "status"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "Class": "sensor",
+      "Type": "rain-gauge-sensor",
+      "Model": "SEN-RAIN-G",
+      "Name": "강우센서",
+      "ValueUnit": "mm",
+      "ValueType": "float",
+      "CommSpec": {
+        "KS-X-3267:2018": {
+          "read": {
+            "starting-register": 224,
+            "items": [
+              "value",
+              "status"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "Class": "sensor",
+      "Type": "pyranometer-sensor",
+      "Model": "SEN-RAD",
+      "Name": "일사센서",
+      "ValueUnit": "W/m²",
+      "ValueType": "float",
+      "CommSpec": {
+        "KS-X-3267:2018": {
+          "read": {
+            "starting-register": 227,
+            "items": [
+              "value",
+              "status"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "Class": "sensor",
+      "Type": "wind-speed-sensor",
+      "Model": "SEN-WSPEED",
+      "Name": "풍속센서",
+      "ValueUnit": "m/s",
+      "ValueType": "float",
+      "CommSpec": {
+        "KS-X-3267:2018": {
+          "read": {
+            "starting-register": 230,
+            "items": [
+              "value",
+              "status"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "Class": "sensor",
+      "Type": "wind-direction-sensor",
+      "Model": "SEN-WDIR",
+      "Name": "풍향센서",
+      "ValueUnit": "°",
+      "ValueType": "float",
+      "CommSpec": {
+        "KS-X-3267:2018": {
+          "read": {
+            "starting-register": 233,
+            "items": [
+              "value",
+              "status"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "Class": "sensor",
+      "Type": "voltage-sensor",
+      "Model": "SEN-VOL",
+      "Name": "전압센서",
+      "ValueUnit": "V",
+      "ValueType": "float",
+      "CommSpec": {
+        "KS-X-3267:2018": {
+          "read": {
+            "starting-register": 236,
+            "items": [
+              "value",
+              "status"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "Class": "sensor",
+      "Type": "CO2-sensor",
+      "Model": "SEN-CO2",
+      "Name": "이산화탄소센서",
+      "ValueUnit": "ppm",
+      "ValueType": "float",
+      "CommSpec": {
+        "KS-X-3267:2018": {
+          "read": {
+            "starting-register": 239,
+            "items": [
+              "value",
+              "status"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "Class": "sensor",
+      "Type": "EC-sensor",
+      "Model": "SEN-EC",
+      "Name": "EC센서",
+      "ValueUnit": "dS/m",
+      "ValueType": "float",
+      "CommSpec": {
+        "KS-X-3267:2018": {
+          "read": {
+            "starting-register": 242,
+            "items": [
+              "value",
+              "status"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "Class": "sensor",
+      "Type": "quantum-sensor",
+      "Model": "SEN-QUAN",
+      "Name": "광량자센서",
+      "ValueUnit": "μmol/m²/s",
+      "ValueType": "float",
+      "CommSpec": {
+        "KS-X-3267:2018": {
+          "read": {
+            "starting-register": 245,
+            "items": [
+              "value",
+              "status"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "Class": "sensor",
+      "Type": "soil-moisture-sensor",
+      "Model": "SEN-SMOI",
+      "Name": "토향함수율센서",
+      "ValueUnit": "%vol.",
+      "ValueType": "float",
+      "CommSpec": {
+        "KS-X-3267:2018": {
+          "read": {
+            "starting-register": 248,
+            "items": [
+              "value",
+              "status"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "Class": "sensor",
+      "Type": "tensiometer-sensor",
+      "Model": "SEN-TEN",
+      "Name": "토양장력센서",
+      "ValueUnit": "kPa",
+      "ValueType": "float",
+      "CommSpec": {
+        "KS-X-3267:2018": {
+          "read": {
+            "starting-register": 251,
+            "items": [
+              "value",
+              "status"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "Class": "sensor",
+      "Type": "pH-sensor",
+      "Model": "SEN-pH",
+      "Name": "pH센서",
+      "ValueUnit": "",
+      "ValueType": "float",
+      "CommSpec": {
+        "KS-X-3267:2018": {
+          "read": {
+            "starting-register": 254,
+            "items": [
+              "value",
+              "status"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "Class": "sensor",
+      "Type": "soil-temperature-sensor",
+      "Model": "SEN-STEMP",
+      "Name": "지온센서",
+      "ValueUnit": "℃",
+      "ValueType": "float",
+      "CommSpec": {
+        "KS-X-3267:2018": {
+          "read": {
+            "starting-register": 257,
+            "items": [
+              "value",
+              "status"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "Class": "sensor",
+      "Type": "temperature-sensor",
+      "Model": "SEN-TEMP",
+      "Name": "온도센서",
+      "ValueUnit": "℃",
+      "ValueType": "float",
+      "CommSpec": {
+        "KS-X-3267:2018": {
+          "read": {
+            "starting-register": 260,
+            "items": [
+              "value",
+              "status"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "Class": "sensor",
+      "Type": "temperature-sensor",
+      "Model": "SEN-TEMP",
+      "Name": "온도센서",
+      "ValueUnit": "℃",
+      "ValueType": "float",
+      "CommSpec": {
+        "KS-X-3267:2018": {
+          "read": {
+            "starting-register": 263,
+            "items": [
+              "value",
+              "status"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "Class": "sensor",
+      "Type": "temperature-sensor",
+      "Model": "SEN-TEMP",
+      "Name": "온도센서",
+      "ValueUnit": "℃",
+      "ValueType": "float",
+      "CommSpec": {
+        "KS-X-3267:2018": {
+          "read": {
+            "starting-register": 266,
+            "items": [
+              "value",
+              "status"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "Class": "sensor",
+      "Type": "temperature-sensor",
+      "Model": "SEN-TEMP",
+      "Name": "온도센서",
+      "ValueUnit": "℃",
+      "ValueType": "float",
+      "CommSpec": {
+        "KS-X-3267:2018": {
+          "read": {
+            "starting-register": 269,
+            "items": [
+              "value",
+              "status"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "Class": "sensor",
+      "Type": "temperature-sensor",
+      "Model": "SEN-TEMP",
+      "Name": "온도센서",
+      "ValueUnit": "℃",
+      "ValueType": "float",
+      "CommSpec": {
+        "KS-X-3267:2018": {
+          "read": {
+            "starting-register": 272,
+            "items": [
+              "value",
+              "status"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "Class": "sensor",
+      "Type": "temperature-sensor",
+      "Model": "SEN-TEMP",
+      "Name": "온도센서",
+      "ValueUnit": "℃",
+      "ValueType": "float",
+      "CommSpec": {
+        "KS-X-3267:2018": {
+          "read": {
+            "starting-register": 275,
+            "items": [
+              "value",
+              "status"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "Class": "sensor",
+      "Type": "temperature-sensor",
+      "Model": "SEN-TEMP",
+      "Name": "온도센서",
+      "ValueUnit": "℃",
+      "ValueType": "float",
+      "CommSpec": {
+        "KS-X-3267:2018": {
+          "read": {
+            "starting-register": 278,
+            "items": [
+              "value",
+              "status"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "Class": "sensor",
+      "Type": "humidity-sensor",
+      "Model": "SEN-HUMI",
+      "Name": "습도센서",
+      "ValueUnit": "%",
+      "ValueType": "float",
+      "CommSpec": {
+        "KS-X-3267:2018": {
+          "read": {
+            "starting-register": 281,
+            "items": [
+              "value",
+              "status"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "Class": "sensor",
+      "Type": "humidity-sensor",
+      "Model": "SEN-HUMI",
+      "Name": "습도센서",
+      "ValueUnit": "%",
+      "ValueType": "float",
+      "CommSpec": {
+        "KS-X-3267:2018": {
+          "read": {
+            "starting-register": 284,
+            "items": [
+              "value",
+              "status"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "Class": "sensor",
+      "Type": "weight-sensor",
+      "Model": "SEN-WEIG",
+      "Name": "무게센서",
+      "ValueUnit": "Kg",
+      "ValueType": "float",
+      "CommSpec": {
+        "KS-X-3267:2018": {
+          "read": {
+            "starting-register": 287,
+            "items": [
+              "value",
+              "status"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "Class": "sensor",
+      "Type": "weight-sensor",
+      "Model": "SEN-WEIG",
+      "Name": "무게센서",
+      "ValueUnit": "Kg",
+      "ValueType": "float",
+      "CommSpec": {
+        "KS-X-3267:2018": {
+          "read": {
+            "starting-register": 290,
+            "items": [
+              "value",
+              "status"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}
