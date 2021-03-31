@@ -10,7 +10,7 @@ import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 
-import ksxsdk.*;
+
 public class PaneSensor extends Pane
 {
     public ActuatorDev myActuator;

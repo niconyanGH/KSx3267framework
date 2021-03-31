@@ -1,8 +1,6 @@
 import java.util.List;
 import javafx.scene.paint.Color;
 
-import ksxsdk.*;
-
 public class ReadSensorThread implements Runnable {
         private ActuatorNode mActuatorNode;
         private List<PaneSensor> mPlist;
