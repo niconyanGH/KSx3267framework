@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 Java/Applications/actuatormonitor/.vscode/extensions.json
 Java/Applications/actuatormonitor/.vscode/launch.json
 Java/Applications/actuatormonitor/.vscode/settings.json
@@ -9,3 +10,8 @@ Java/SDKforKSX3267/lib/jackson-annotations-2.6.0.jar
 Java/SDKforKSX3267/lib/jackson-core-2.6.3.jar
 Java/SDKforKSX3267/lib/jackson-databind-2.6.3.jar
 Java/SDKforKSX3267/lib/jSerialComm-2.6.2.jar
+=======
+## JavaFX Setting ##
+Java/Applications/actuatormonitor/.vscode/launch.json
+Java/Applications/actuatormonitor/.vscode/settings.json
+>>>>>>> 042aa1f43f80b22c2cf60fb0015f257acff8be10
