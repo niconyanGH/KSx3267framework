@@ -19,10 +19,11 @@
     <Language>en-US</Language>
     <DocumentationSources>
       <DocumentationSource sourceFile="..\RS485ModbusLibary\RS485ModbusLibary.csproj" />
-<DocumentationSource sourceFile="..\SDKforKSX3267\SDKforKSX3267.csproj" /></DocumentationSources>
+      <DocumentationSource sourceFile="..\SDKforKSX3267\SDKforKSX3267.csproj" />
+    </DocumentationSources>
     <SaveComponentCacheCapacity>100</SaveComponentCacheCapacity>
     <BuildAssemblerVerbosity>OnlyWarningsAndErrors</BuildAssemblerVerbosity>
-    <HelpFileFormat>HtmlHelp1, Website</HelpFileFormat>
+    <HelpFileFormat>HtmlHelp1</HelpFileFormat>
     <IndentHtml>False</IndentHtml>
     <KeepLogFile>True</KeepLogFile>
     <DisableCodeBlockComponent>False</DisableCodeBlockComponent>
