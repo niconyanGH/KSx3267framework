@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDKforKSX3267", "..\..\SDKforKSX3267\SDKforKSX3267.csproj", "{27D008EA-6B90-41C6-8437-F836C55B597E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{55C9A88F-AE22-4899-ACF0-38F06B39033F} = {55C9A88F-AE22-4899-ACF0-38F06B39033F}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RS485ModbusLibary", "..\..\RS485ModbusLibary\RS485ModbusLibary.csproj", "{55C9A88F-AE22-4899-ACF0-38F06B39033F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NutrientNodeMonitor", "..\..\Applications\NutrientNodeMonitor\NutrientNodeMonitor.csproj", "{C1CA08B1-87C4-40E4-AF69-56934380E1C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetadataBulidUtility", "..\..\Applications\MetadataBulidUtility\MetadataBulidUtility.csproj", "{D7137949-C39D-446C-B7A7-4600B28D3BD6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27D008EA-6B90-41C6-8437-F836C55B597E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27D008EA-6B90-41C6-8437-F836C55B597E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27D008EA-6B90-41C6-8437-F836C55B597E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27D008EA-6B90-41C6-8437-F836C55B597E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55C9A88F-AE22-4899-ACF0-38F06B39033F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55C9A88F-AE22-4899-ACF0-38F06B39033F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55C9A88F-AE22-4899-ACF0-38F06B39033F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55C9A88F-AE22-4899-ACF0-38F06B39033F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1CA08B1-87C4-40E4-AF69-56934380E1C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1CA08B1-87C4-40E4-AF69-56934380E1C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1CA08B1-87C4-40E4-AF69-56934380E1C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1CA08B1-87C4-40E4-AF69-56934380E1C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7137949-C39D-446C-B7A7-4600B28D3BD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7137949-C39D-446C-B7A7-4600B28D3BD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7137949-C39D-446C-B7A7-4600B28D3BD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7137949-C39D-446C-B7A7-4600B28D3BD6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
