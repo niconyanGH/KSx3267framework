@@ -91,3 +91,5 @@ C_sharp/VisualStudiosolutions/Help/LastBuild.log
 C_sharp/VisualStudiosolutions/Help/Documentation.chm
 C_sharp/RS485ModbusLibary/obj/Debug/RS485ModbusLibary.csprojResolveAssemblyReference.cache
 C_sharp/VisualStudiosolutions/SDKSolution/SDKSolution.v12.suo
+Java/Applications/sensornodemonitor/.vscode/launch.json
+Java/Applications/sensornodemonitor/.vscode/settings.json
