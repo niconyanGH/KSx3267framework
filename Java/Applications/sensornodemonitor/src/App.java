@@ -169,9 +169,7 @@ public class App extends Application {
 
     public void OpenPort(String tmpPort) {
         if (mMaster.Open(tmpPort, 9600) == false) {
-            System
-                .out
-                .println("통신포트를 열수 없읍니다. ");
+            System.out.println("통신포트를 열수 없읍니다. ");
         } else {
             cbportList.setDisable(true);
             btnOpen.setDisable(true);

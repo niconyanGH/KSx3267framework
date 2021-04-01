@@ -12,8 +12,7 @@ import javafx.scene.control. *;
 import javafx.scene.layout.FlowPane;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
-//kbm 소스 수정
-//nhs 소스 수정
+
 public class App extends Application {
 
     public ComboBox cbportList;
