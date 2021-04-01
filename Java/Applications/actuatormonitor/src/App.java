@@ -223,9 +223,7 @@ public class App extends Application {
         try {
             if (mActuatorNode.ReadDeviceCodeList() == true) {
                 if (mActuatorNode.CreateDevices() == true) {
-                    System
-                        .out
-                        .println(" 디바이스갯수 = " + mActuatorNode.mDevices.size());
+                    System.out.println(" 디바이스갯수 = " + mActuatorNode.mDevices.size());
 
                     for (ActuatorDev msdev : mActuatorNode.mActuatorDevices) {
                         PaneSensor ps = PaneSensor.Create(this, msdev);

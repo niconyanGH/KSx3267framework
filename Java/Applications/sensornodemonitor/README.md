@@ -12,6 +12,7 @@ workspace는 다음 두개의 폴더를 기본적으로 포함합니다.
 - `lib`: 메인 종속성을 위한 폴더
 
 ## 종속성 관리
+
 여러분의 종속성 관리를 위해 `JAVA DEPENDENCIES` view를 사용하면 됩니다. 자세한 사항은 [여기](https://github.com/microsoft/vscode-java-pack/blob/master/release-notes/v0.9.0.md#work-with-jar-files-directly)에서 확인할 수 있습니다.
 VS Code에서 앱을 실행하면 .vscode 폴더와 그 아래에 launch.json, setting.json이 생성될 것입니다.
 launch.json을 열어 아래의 코드를
