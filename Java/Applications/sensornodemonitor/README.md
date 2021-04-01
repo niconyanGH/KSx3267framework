@@ -39,3 +39,9 @@ launch.json을 열어 아래의 코드를
 
 ## 스크린샷
 ![](KD-Sensornodemonitor-demo.gif)
+
+## Q&A
+
+    Error: JavaFX runtime components are missing, and are required to run this application
+    
+이 에러는 launch.json 파일에 JavaFX lib 경로가 제대로 입력되지 않은 것입니다.
