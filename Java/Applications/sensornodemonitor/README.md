@@ -15,10 +15,10 @@ workspace는 다음 두개의 폴더를 기본적으로 포함합니다.
 여러분의 종속성 관리를 위해 `JAVA DEPENDENCIES` view를 사용하면 됩니다. 자세한 사항은 [여기](https://github.com/microsoft/vscode-java-pack/blob/master/release-notes/v0.9.0.md#work-with-jar-files-directly)에서 확인할 수 있습니다.
 VS Code에서 앱을 실행하면 .vscode 폴더와 그 아래에 launch.json, setting.json이 생성될 것입니다.
 launch.json을 열어
-"vmArgs": "--module-path=%JAVAFX_SDK_LIBRARY%  --add-modules=ALL-MODULE-PATH",
+- "vmArgs": "--module-path=%JAVAFX_SDK_LIBRARY%  --add-modules=ALL-MODULE-PATH",
 을
-"name": "Launch App",
-"name": "Launch Current File",
+- "name": "Launch App",
+- "name": "Launch Current File",
 줄 밑에 입력하고 저장해주십시오.
 %JAVAFX_SDK_LIBRARY%는 설치한 JavaFX의 lib의 절대경로입니다.
 
@@ -34,4 +34,4 @@ launch.json을 열어
 9. 각 센서패널을 클릭하면 조회한 값으로 만들어진 그래프가 하단에 보이게 됩니다.
 
 ## 스크린샷
-![](KD 센서노드 시연.gif)
+![](KD-Sensornodemonitor-demo.gif)
