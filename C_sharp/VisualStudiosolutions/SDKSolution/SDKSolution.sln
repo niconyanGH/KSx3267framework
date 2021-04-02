@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RS485ModbusLibary", "..\..\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SensorNodeMonitor", "..\..\Applications\SensorNodeMonitor\SensorNodeMonitor.csproj", "{DD0566AC-DE63-46E9-8A04-6C47F4163B9D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActuatorNodeMonitorApp", "..\..\Applications\ActuatorNodeMonitor\ActuatorNodeMonitorApp.csproj", "{BA4281F6-DAC1-496D-BB7F-2628B15C8C07}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{DD0566AC-DE63-46E9-8A04-6C47F4163B9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD0566AC-DE63-46E9-8A04-6C47F4163B9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD0566AC-DE63-46E9-8A04-6C47F4163B9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA4281F6-DAC1-496D-BB7F-2628B15C8C07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA4281F6-DAC1-496D-BB7F-2628B15C8C07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA4281F6-DAC1-496D-BB7F-2628B15C8C07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA4281F6-DAC1-496D-BB7F-2628B15C8C07}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
