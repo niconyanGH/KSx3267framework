@@ -62,6 +62,8 @@ public class App extends Application {
     @Override public void start(Stage stage)throws IOException {
 
         Parent root = FXMLLoader.load(getClass().getResource("mainFrame.fxml"));
+        stage.setTitle("구동기 모니터 KD");
+
         sclPanSwitch = (ScrollPane)root.lookup("#sclPaneSwitch");
         flwPanSwitch = (FlowPane)sclPanSwitch.getContent();
         sclPanReact = (ScrollPane)root.lookup("#sclPaneReactable");
@@ -95,6 +97,8 @@ public class App extends Application {
         btnReactStop = (Button)root.lookup("#btnReactStop");
 
         SerialPort[] ports = SerialPort.getCommPorts();
+        
+
         btnScan.setDisable(true);
         btnDvc.setDisable(true);
 
@@ -105,9 +109,7 @@ public class App extends Application {
         }
 
         btnOpen.setOnAction((event) -> {
-            System
-                .out
-                .println(cbportList.getSelectionModel().getSelectedItem());
+            System.out.println(cbportList.getSelectionModel().getSelectedItem());
             for (SerialPort pp : ports) {
                 if (pp.getDescriptivePortName() == cbportList.getSelectionModel().getSelectedItem()) 
                     OpenPort(pp.getSystemPortName());

@@ -46,6 +46,9 @@ public class App extends Application {
 
     String cmd1 = "값 읽기[03]";
     String cmd2 = "값 한개 쓰기[06]";
+    
+    int cntcmd = 1;
+    int operationMode = 0;
 
     @Override public void start(Stage stage)throws IOException {
 
@@ -86,22 +89,22 @@ public class App extends Application {
         rbtnSensorNodeReading.setOnAction((event) -> {
             setOperationMode(rbtnSensorNodeReading);
             setCommand();
+            operationMode = 1;
         });
         rbtnActuatorNodeReading.setOnAction((event) -> {
             setOperationMode(rbtnActuatorNodeReading);
             setCommand();
+            operationMode = 2;
         });
         rbtnActuatorNodeWritng.setOnAction((event) -> {
             setOperationMode(rbtnActuatorNodeWritng);
             setCommand();
+            operationMode = 3;
         });
         
         cmboxFunctionSelector.setOnAction((event) -> {
             setCommand();
         });
-        
-        rbtnActuatorNodeReading.setSelected(true);
-        rbtnActuatorNodeReading.requestFocus();
 
         btnOpen.setOnAction((event) -> {
             System.out.println(cbportList.getSelectionModel().getSelectedItem());
@@ -121,15 +124,20 @@ public class App extends Application {
             ByteUtil.cast_value_to_bytes_insert_buffer(Short.parseShort(txtFLength.getText()), msgValue, 0);
             tblVResultTable.getItems().clear();
 
+            txtACommand.appendText(Integer.toString(cntcmd)+". ");
             if(cmboxCommandSelector.getSelectionModel().getSelectedItem().toString().equals(cmd1))
             {
                 mResponse = mMaster.StandardManualWordRead_F3(slaveAddr, startAddr, msgLength, 1000);
-                txtACommand.appendText("RX: ");
+                
+                
+                txtACommand.appendText(Integer.toString(mResponse.byte_length));
+                txtACommand.appendText("byte 메세지 수신.");
+                txtACommand.appendText("\n");
+                
                 for(int readData : mResponse.wordDatas)
                 {
-                    txtACommand.appendText(Integer.toString(readData)+" | ");
                     ms[0] = Integer.toString(cntAddr);
-                    ms[1] = "hi";
+                    ms[1] = addrMapDes.mapping(operationMode,cntAddr);
                     ms[2] = Integer.toString(readData);
                     ms[3] = Integer.toHexString(readData);
                     ms[4] = "0.00";
@@ -137,18 +145,20 @@ public class App extends Application {
                     
                     cntAddr++;
                 }
-                txtACommand.appendText("\n");
+                
                 tblVResultTable.setItems(deviceData);
             } else if(cmboxCommandSelector.getValue().toString().equals(cmd2))
             {
-                mMaster.StandardManualWordWrite_F10(slaveAddr, startAddr, msgValue, 1000);
-                mResponse = mMaster.StandardManualWordRead_F3(slaveAddr, startAddr, 1, 1000);
-                txtACommand.appendText("RX: ");
+                mResponse = mMaster.StandardManualWordWrite_F10(slaveAddr, startAddr, msgValue, 1000);
+
+                txtACommand.appendText(Integer.toString(mResponse.byte_length));
+                txtACommand.appendText("byte 메세지 수신.");
+                txtACommand.appendText("\n");
+
                 for(int readData : mResponse.wordDatas)
                 {
-                    txtACommand.appendText(Integer.toString(readData)+" | ");
                     ms[0] = Integer.toString(cntAddr);
-                    ms[1] = "hi";
+                    ms[1] = addrMapDes.mapping(operationMode,cntAddr);
                     ms[2] = Integer.toString(readData);
                     ms[3] = Integer.toHexString(readData);
                     ms[4] = "0.00";
@@ -156,9 +166,9 @@ public class App extends Application {
                     
                     cntAddr++;
                 }
-                txtACommand.appendText("\n");
                 tblVResultTable.setItems(deviceData);
             }
+            cntcmd++;
         });
         stage.setScene(new Scene(root));
         stage.show();
@@ -171,6 +181,10 @@ public class App extends Application {
             cbportList.setDisable(true);
             btnOpen.setDisable(true);
             paneModeSelector.setDisable(false);
+            
+        rbtnSensorNodeReading.setSelected(true);
+        rbtnSensorNodeReading.requestFocus();
+        setOperationMode(rbtnSensorNodeReading);
         }
     }
 
