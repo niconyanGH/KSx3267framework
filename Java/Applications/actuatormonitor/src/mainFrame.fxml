@@ -16,13 +16,22 @@
 
 <VBox prefHeight="784.0" prefWidth="1068.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
   <children>
-    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="588.0" prefWidth="877.0" VBox.vgrow="ALWAYS">
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="588.0" prefWidth="877.0" style="-fx-background-color: #B2EBF2;" VBox.vgrow="ALWAYS">
       <children>
-            <Button id="btnopen" layoutX="21.0" layoutY="64.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="155.0" text="통신포트열기" />
-            <Button id="button_scan" layoutX="218.0" layoutY="15.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="166.0" text="스위치, 개폐기 검색">
+            <Button id="btnopen" layoutX="21.0" layoutY="64.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="155.0" style="-fx-background-color: #18FFFF; -fx-border-width: 2; -fx-border-color: #9E9E9E;" text="통신포트열기">
                <font>
-                  <Font name="NanumSquareRound Regular" size="12.0" />
+                  <Font name="Malgun Gothic" size="12.0" />
                </font></Button>
+            <Button id="button_scan" layoutX="218.0" layoutY="15.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="166.0" style="-fx-background-color: #18FFFF; -fx-border-width: 2; -fx-border-color: #9E9E9E;" text="스위치, 개폐기 검색">
+               <font>
+                  <Font name="Malgun Gothic" size="12.0" />
+               </font>
+            </Button>
+            <Button id="button_device" layoutX="218.0" layoutY="95.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="166.0" style="-fx-background-color: #18FFFF; -fx-border-width: 2; -fx-border-color: #9E9E9E;" text="장치(센서)검색">
+               <font>
+                  <Font name="Malgun Gothic" size="12.0" />
+               </font>
+            </Button>
             <Label id="label_nodeinfo" layoutX="412.0" layoutY="27.0" prefHeight="105.0" prefWidth="570.0" text="..." />
             <Label id="label_scan" layoutX="218.0" layoutY="66.0" prefHeight="14.0" prefWidth="166.0" text="..." />
             <ComboBox id="comboportList" layoutX="23.0" layoutY="25.0" prefWidth="150.0" />
@@ -33,7 +42,7 @@
             </ScrollPane>
             <Pane id="paneSwitchControl" layoutX="831.0" layoutY="163.0" prefHeight="285.0" prefWidth="223.0">
                <children>
-                  <AnchorPane layoutX="1.0" layoutY="3.0" minHeight="0.0" minWidth="0.0" prefHeight="282.0" prefWidth="221.0">
+                  <AnchorPane layoutX="1.0" layoutY="3.0" minHeight="0.0" minWidth="0.0" prefHeight="282.0" prefWidth="221.0" style="-fx-background-color: #4FC3F7;">
                      <children>
                         <RadioButton id="rbtnSwtCtrl1" layoutX="30.0" layoutY="78.0" mnemonicParsing="false" text="일반제어">
                            <toggleGroup>
@@ -48,12 +57,12 @@
                               <Font name="NanumMyeongjo YetHangul" size="13.0" />
                            </font>
                         </RadioButton>
-                        <Button id="btnSwtOn" layoutX="55.0" layoutY="198.0" mnemonicParsing="false" text="켜기">
+                        <Button id="btnSwtOn" layoutX="55.0" layoutY="198.0" mnemonicParsing="false" style="-fx-background-color: #18FFFF; -fx-border-width: 2; -fx-border-color: #9E9E9E;" text="켜기">
                            <font>
                               <Font name="NanumMyeongjo YetHangul" size="13.0" />
                            </font>
                         </Button>
-                        <Button id="btnSwtOff" layoutX="129.0" layoutY="198.0" mnemonicParsing="false" text="끄기">
+                        <Button id="btnSwtOff" layoutX="129.0" layoutY="198.0" mnemonicParsing="false" style="-fx-background-color: #18FFFF; -fx-border-width: 2; -fx-border-color: #9E9E9E;" text="끄기">
                            <font>
                               <Font name="NanumMyeongjo YetHangul" size="13.0" />
                            </font>
@@ -72,7 +81,7 @@
             </ScrollPane>
             <Pane id="paneReactableControl" layoutX="831.0" layoutY="460.0" prefHeight="285.0" prefWidth="223.0">
                <children>
-                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="282.0" prefWidth="221.0">
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="282.0" prefWidth="221.0" style="-fx-background-color: #4FC3F7;">
                      <children>
                         <RadioButton id="rbtnReactCtrl1" layoutX="32.0" layoutY="77.0" mnemonicParsing="false" text="일반제어">
                            <toggleGroup>
@@ -87,22 +96,22 @@
                               <Font name="NanumMyeongjo YetHangul" size="13.0" />
                            </font>
                         </RadioButton>
-                        <TextArea id="txtAreaReactTime" layoutX="155.0" layoutY="111.0" prefHeight="56.0" prefWidth="58.0">
+                        <TextArea id="txtAreaReactTime" layoutX="76.0" layoutY="200.0" minHeight="5.0" minWidth="5.0" prefHeight="25.0" prefWidth="75.0">
                            <font>
-                              <Font size="18.0" />
+                              <Font name="Malgun Gothic" size="12.0" />
                            </font>
                         </TextArea>
-                        <Button id="btnReactOpen" layoutX="31.0" layoutY="233.0" mnemonicParsing="false" text="열기">
+                        <Button id="btnReactOpen" layoutX="31.0" layoutY="233.0" mnemonicParsing="false" style="-fx-background-color: #18FFFF; -fx-border-width: 2; -fx-border-color: #9E9E9E;" text="열기">
                            <font>
                               <Font name="NanumMyeongjo YetHangul" size="13.0" />
                            </font>
                         </Button>
-                        <Button id="btnReactClose" layoutX="152.0" layoutY="233.0" mnemonicParsing="false" text="닫기">
+                        <Button id="btnReactClose" layoutX="152.0" layoutY="233.0" mnemonicParsing="false" style="-fx-background-color: #18FFFF; -fx-border-width: 2; -fx-border-color: #9E9E9E;" text="닫기">
                            <font>
                               <Font name="NanumMyeongjo YetHangul" size="13.0" />
                            </font>
                         </Button>
-                        <Button id="btnReactStop" layoutX="91.0" layoutY="233.0" mnemonicParsing="false" text="중지">
+                        <Button id="btnReactStop" layoutX="91.0" layoutY="233.0" mnemonicParsing="false" style="-fx-background-color: #18FFFF; -fx-border-width: 2; -fx-border-color: #9E9E9E;" text="중지">
                            <font>
                               <Font name="NanumMyeongjo YetHangul" size="13.0" />
                            </font>
@@ -123,7 +132,7 @@
                   </AnchorPane>
                </children>
             </Pane>
-            <Button id="button_device" layoutX="218.0" layoutY="95.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="166.0" text="장치(센서)검색" />
+            
       </children>
     </AnchorPane>
   </children>

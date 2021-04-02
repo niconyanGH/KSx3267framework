@@ -55,9 +55,9 @@ public class App extends Application {
     private PaneSensor switchPanePreSelect;
     private PaneSensor reactablePanePreSelect;
 
-    String defaultPaneColor = "#7986CB";
-    String selectedPaneColor = "#BA68C8";
-    String scaningPaneColor = "#CDDC39";
+    String defaultPaneColor = "#80CBC4";
+    String selectedPaneColor = "#26A69A";
+    String scaningPaneColor = "#E0F7FA";
     
     @Override public void start(Stage stage)throws IOException {
 
