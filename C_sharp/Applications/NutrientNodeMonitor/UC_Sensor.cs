@@ -27,7 +27,8 @@ namespace NutrientNodeMonitor
 
         public void UpdateUI()
         {
-            label_name.Text = mSensor.mDevice.Name;
+            
+            label_name.Text = mSensor.mDevice.Name  ;
             label_value.Text = mSensor.GetValuestring(true);
             label_status.Text = "상태: " + KSX326xMetadata.GetStatusDescrition((STATUS_CODE)mSensor.status);
 

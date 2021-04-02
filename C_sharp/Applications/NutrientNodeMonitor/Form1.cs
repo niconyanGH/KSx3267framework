@@ -20,12 +20,9 @@ namespace NutrientNodeMonitor
     {
 
         public STDModbusMaster mRTUMaster = new STDModbusMaster();
-
         public IntergratedNode mIntergatedNode;
-
         public bool sensorThread_run = false;
         public int sensor_read_interval = 0;
-
         public List<UC_Sensor> mUCSList = new List<UC_Sensor>();
 
 
@@ -494,6 +491,26 @@ namespace NutrientNodeMonitor
             }
 
 
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox_comlist_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox_sensor_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
 
         }
 

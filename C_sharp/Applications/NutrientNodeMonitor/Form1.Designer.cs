@@ -81,6 +81,7 @@
             this.label2.Size = new System.Drawing.Size(63, 17);
             this.label2.TabIndex = 34;
             this.label2.Text = "포트번호:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // comboBox_comlist
             // 
@@ -90,6 +91,7 @@
             this.comboBox_comlist.Name = "comboBox_comlist";
             this.comboBox_comlist.Size = new System.Drawing.Size(134, 25);
             this.comboBox_comlist.TabIndex = 32;
+            this.comboBox_comlist.SelectedIndexChanged += new System.EventHandler(this.comboBox_comlist_SelectedIndexChanged);
             // 
             // groupBox1
             // 
@@ -105,6 +107,7 @@
             this.groupBox1.TabIndex = 35;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "기본정보";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // button_device
             // 
@@ -168,6 +171,7 @@
             this.groupBox_sensor.TabIndex = 36;
             this.groupBox_sensor.TabStop = false;
             this.groupBox_sensor.Text = "센서";
+            this.groupBox_sensor.Enter += new System.EventHandler(this.groupBox_sensor_Enter);
             // 
             // label1
             // 

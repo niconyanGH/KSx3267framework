@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDKforKSX3267", "..\..\SDKf
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RS485ModbusLibary", "..\..\RS485ModbusLibary\RS485ModbusLibary.csproj", "{55C9A88F-AE22-4899-ACF0-38F06B39033F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SensorNodeMonitor", "..\..\Applications\SensorNodeMonitor\SensorNodeMonitor.csproj", "{DD0566AC-DE63-46E9-8A04-6C47F4163B9D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{55C9A88F-AE22-4899-ACF0-38F06B39033F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55C9A88F-AE22-4899-ACF0-38F06B39033F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55C9A88F-AE22-4899-ACF0-38F06B39033F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD0566AC-DE63-46E9-8A04-6C47F4163B9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD0566AC-DE63-46E9-8A04-6C47F4163B9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD0566AC-DE63-46E9-8A04-6C47F4163B9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD0566AC-DE63-46E9-8A04-6C47F4163B9D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
