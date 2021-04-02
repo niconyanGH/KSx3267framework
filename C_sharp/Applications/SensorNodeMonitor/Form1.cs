@@ -105,7 +105,7 @@ namespace SensorNodeMonitor
                     {
                         strinfo += " , 장비없음...";
                     }
-                    else if (mtype == PRODUCT_TYPE.PTYPE_INTEGRATEDNODE)
+                    else if (mtype == PRODUCT_TYPE.PTYPE_SENSORNODE)
                     {
 
                         strinfo += " , 장비연결됨...";
