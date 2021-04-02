@@ -16,8 +16,8 @@ Java/Applications/actuatormonitor/.vscode/launch.json
 Java/Applications/actuatormonitor/.vscode/settings.json
 Java/Applications/sensornodemonitor/.vscode/launch.json
 Java/Applications/sensornodemonitor/.vscode/settings.json
-Java/Applications/RS485_Integrated controller/.vscode/launch.json
-Java/Applications/RS485_Integrated controller/.vscode/settings.json
+Java/Applications/controllersimulator/.vscode/launch.json
+Java/Applications/controllersimulator/.vscode/settings.json
 >>>>>>> 042aa1f43f80b22c2cf60fb0015f257acff8be10
 C_sharp/Applications/MetadataBulidUtility/bin/Debug/MetadataBulidUtility.exe
 C_sharp/Applications/MetadataBulidUtility/bin/Debug/MetadataBulidUtility.exe.config
