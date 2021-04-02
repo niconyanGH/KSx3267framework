@@ -22,13 +22,13 @@ public class ReadSensorThread implements Runnable {
             {
                 for(PaneSensor ps : mPlist)
                 {
-                    ps.SetBKColor(Color.valueOf("#8C9EFF"));
+                    ps.SetBKColor(Color.valueOf("#F4511E"));
                     if(mSensornode.readDeviceStatus(ps.mySensor)== true)
                     {
                         ps.UpdateStatus(true);
                     }
                     ThreadSleep(timeintervalmsec);
-                    ps.SetBKColor(Color.valueOf("#FF8A80"));
+                    ps.SetBKColor(Color.valueOf("#FF9800"));
                     if(isrun==false)
                     {
                         return ;
