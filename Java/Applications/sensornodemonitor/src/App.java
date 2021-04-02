@@ -33,6 +33,8 @@ public class App extends Application {
     @Override public void start(Stage stage)throws IOException {
 
         Parent root = FXMLLoader.load(getClass().getResource("mainframe.fxml"));
+        stage.setTitle("센서 모니터 KD");
+
         ScrollPane sclsensorflowpane = (ScrollPane)root.lookup("#sclsensor");
         sensorflowpane = (FlowPane)sclsensorflowpane.getContent();
 

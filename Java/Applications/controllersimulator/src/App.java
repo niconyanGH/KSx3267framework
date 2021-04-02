@@ -54,6 +54,7 @@ public class App extends Application {
 
         Parent root = FXMLLoader.load(getClass().getResource("mainFrame.fxml"));
 
+        stage.setTitle("제어기 모의실험 앱 KD");
         cbportList = (ComboBox)root.lookup("#comboportList");
         btnOpen = (Button)root.lookup("#btnopen");
 
