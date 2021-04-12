@@ -9,6 +9,7 @@ extern "C"
 
 
 /// 사용자 정의 메모리맵 지정
+
 #define modbus_readwrite_reg_start_address       0
 #define modbus_readwrite_reg_size 				0x2000
 #define modbus_readonly_reg_start_address       20000
@@ -106,6 +107,11 @@ void STD_ModbusRTU_New_Slave(int rs485_device,int mslave, modbus_register_user_m
 int STD_ModbusRTU_receive( uint8_t *req);
 int STD_ModbusRTU_reply ( const uint8_t *req, int req_length);
 
+
+///마스터 기능
+void STD_ModbusRTU_New_Master(int rs485_device);
+BOOL   StandardWordRead_F3(int Slave, int StartAddr, int WordLength, int waitMillisecond, uint16_t *WordDatas);
+BOOL StandardWordWrite_F10(int Slave, int StartAddr, uint16_t *WordDatas,int Wordlength, int waitMillisecond );
 
 
 
