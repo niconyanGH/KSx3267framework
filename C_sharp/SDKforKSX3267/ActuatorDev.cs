@@ -334,7 +334,7 @@ namespace SDKforKSX3267
                 return false;
             }
 
-            this.status = wrapper.getUShort();
+            this.opid  = wrapper.getUShort();
 
 
             if (mDevice.getControllevel() >= CONTROL_LEVEL.LV_1)
@@ -343,7 +343,7 @@ namespace SDKforKSX3267
 
                 if (mDevice.getActuatorType() == ACTUATOR_TYPE.SWITCH)
                 {
-                    this.opid = wrapper.getUShort();
+                    this.status = wrapper.getUShort();
 
                     if (mDevice.getControllevel() >= CONTROL_LEVEL.LV_2)
                     {
@@ -367,7 +367,7 @@ namespace SDKforKSX3267
 
                 if (mDevice.getActuatorType() == ACTUATOR_TYPE.RETRACTABLE)
                 {
-                    this.opid = wrapper.getUShort();
+                    this.status = wrapper.getUShort();
 
 
 

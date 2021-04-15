@@ -163,12 +163,12 @@ public class ActuatorDev {
             return false;
         }
 
-        this.status = wrapper.getUShort();
+        this.opid = wrapper.getUShort();
 
         if (mDevice.getControllevel().getValue() >= (int) CONTROL_LEVEL.LV_1.getValue()) {
 
             if (mDevice.getActuatorType() == ACTUATOR_TYPE.SWITCH) {
-                this.opid = wrapper.getUShort();
+                this.status = wrapper.getUShort();
 
                 if (mDevice.getControllevel().getValue() >= (int) CONTROL_LEVEL.LV_2.getValue()) {
 
@@ -187,7 +187,7 @@ public class ActuatorDev {
             }
 
             if (mDevice.getActuatorType() == ACTUATOR_TYPE.RETRACTABLE) {
-                this.opid = wrapper.getUShort();
+                this.status = wrapper.getUShort();
 
                 if (mDevice.getControllevel().getValue() >= CONTROL_LEVEL.LV_2.getValue()) {
                     this.remain_time = wrapper.getUInt();
