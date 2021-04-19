@@ -119,7 +119,6 @@ public class App extends Application {
         btnScan.setOnAction((event) -> {
             NodeScan();
             btnOpen.setDisable(true);
-            btnScan.setDisable(true);
             btnDvc.setDisable(false);
         });
         btnDvc.setOnAction((event) -> {
@@ -203,6 +202,7 @@ public class App extends Application {
             }
             lbscaninfo.setText(strinfo);
         }
+        System.out.println("스캔 종료");
 
         if (mNodetype == PRODUCT_TYPE.ACTUATORNODE) {
             mActuatorNode = new ActuatorNode(slaveid, mMaster);

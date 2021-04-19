@@ -22,18 +22,18 @@ public class ReadSensorThread implements Runnable {
             {
                 for(PaneSensor ps : mPlist)
                 {
-                    ps.SetBKColor(Color.valueOf("#CDDC39"));                    // read color
+                    ps.SetBKColor(Color.valueOf("#E0F7FA"));                    // read color
                     if(mActuatorNode.readDeviceStatus(ps.myActuator)== true)
                     {
                         ps.UpdateStatus(true);
                     }
                     ThreadSleep(timeintervalmsec);
                     if(prePaneSensor1==ps){
-                        ps.SetBKColor(Color.valueOf("#BA68C8"));                // select color
+                        ps.SetBKColor(Color.valueOf("#26A69A"));                // select color
                     } else if (prePaneSensor2==ps){
-                        ps.SetBKColor(Color.valueOf("#BA68C8"));                // select color
+                        ps.SetBKColor(Color.valueOf("#26A69A"));                // select color
                     } else{
-                        ps.SetBKColor(Color.valueOf("#7986CB"));                // default color
+                        ps.SetBKColor(Color.valueOf("#80CBC4"));                // default color
                     }
 
                     if(isrun==false)
